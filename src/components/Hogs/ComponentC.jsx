@@ -1,8 +1,8 @@
-import componentD from "./ComponentD";
-function componentC(props) {
-    const {hogs} = props;
+import ComponentD from "./ComponentD";
+function ComponentC(props) {
+    // const {hogs} = props;
   return <div>
-    <componentD/>
+    <ComponentD/>
   </div>;
 }
-export default componentC;
+export default ComponentC;

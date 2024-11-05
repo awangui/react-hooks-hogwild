@@ -1,12 +1,14 @@
 import React from "react";
 import Nav from "./Nav";
 
-import componentA from "./Hogs/ComponentA";
+
+import ComponentA from "./Hogs/ComponentA";
 
 function App() {
 	return (
 		<div className="App">
 			<Nav />
+			<ComponentA />
 		</div>
 	);
 }
