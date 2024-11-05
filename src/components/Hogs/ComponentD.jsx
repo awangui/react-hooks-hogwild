@@ -1,33 +1,16 @@
 import { useState } from 'react';
 
-function ComponentD() {
+function ComponentD(props) {
+  const { hog, style } = props;
   const [showHog, setShowHog] = useState(false);
-  const hog = {
-    name: "Babe",
-    specialty: "Being incredibly cute",
-    greased: false,
-    weight: 2.0,
-    "highest medal achieved": "bronze",
-    image:
-      "https://raw.githubusercontent.com/learn-co-curriculum/react-hooks-hogwild/master/public/images/babe.jpg",
-  };
 
   return (
-    <div
-      onClick={() => setShowHog(!showHog)}
-      style={{
-        margin: "20px",
-        border: "solid 1px black",
-        width: "300px",
-        borderRadius: "4px",
-        padding: "20px",
-      }}
-    >
+    <div onClick={() => setShowHog(!showHog)} style={style}>
       <div>
         <img
           src={hog.image}
           alt={hog.name}
-          style={{ width: "300px", margin: "20px" }}
+          style={{ width: "300px" }}
         />
       </div>
       {showHog && (
