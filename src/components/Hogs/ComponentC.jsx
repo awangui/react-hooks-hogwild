@@ -52,7 +52,7 @@ function ComponentC(props) {
             style={{
               margin: "20px",
               border: "solid 1px black",
-              width: "300px",
+              width: "250px",
               borderRadius: "4px",
     
             }}

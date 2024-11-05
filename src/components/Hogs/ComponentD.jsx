@@ -10,7 +10,8 @@ function ComponentD(props) {
         <img
           src={hog.image}
           alt={hog.name}
-          style={{ width: "300px" }}
+          style={{ width: "250px",    height: "250px",
+            objectFit: "cover",}}
         />
       </div>
       {showHog && (

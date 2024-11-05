@@ -77,7 +77,14 @@ function ComponentB(props) {
                     onChange={(e) => setImage(e.target.value)}
                 />
             </p>
-            <button onClick={addHog}>Add Hog</button>   
+            <button onClick={addHog}style={
+{backgroundColor: "#F5A9BC",
+                color: "white",
+                padding: "10px",
+                borderRadius: "4px",
+                border: "none",
+                cursor: "pointer",}
+            }>Add Hog</button>   
         </div>
     );
 }
