@@ -54,7 +54,7 @@ function ComponentC(props) {
               border: "solid 1px black",
               width: "300px",
               borderRadius: "4px",
-              padding: "20px",
+    
             }}
           />
         ))}
