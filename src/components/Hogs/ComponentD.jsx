@@ -5,20 +5,19 @@ function ComponentD(props) {
   const [showHog, setShowHog] = useState(false);
 
   return (
-    <div onClick={() => setShowHog(!showHog)} style={style}>
-      <div>
+    <div style={style}>
+      <div onClick={() => setShowHog(!showHog)}>
         <img
           src={hog.image}
           alt={hog.name}
-          style={{ width: "250px",    height: "250px",
-            objectFit: "cover",}}
+          style={{ width: "250px", height: "250px", objectFit: "cover" }}
         />
+        <p>
+          Name <b>{hog.name}</b>
+        </p>
       </div>
       {showHog && (
         <>
-          <p>
-            Name <b>{hog.name}</b>
-          </p>
           <p>
             Specialty <b>{hog.specialty}</b>
           </p>
